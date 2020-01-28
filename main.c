@@ -68,6 +68,6 @@ int main()
         aktuellerTag += tage[i];
     }
     aktuellerTag += tag;                                    //Addieren des aktuellen Tages im Monat
-    printf("Der aktuelle Tag im Jahr ist der %i te Tag im Jahr.", aktuellerTag);
+    printf("Der aktuelle Tag im Jahr ist der %i te Tag im Jahr. Dies ist die geupdatete Version.", aktuellerTag);
     return 0;
 }
