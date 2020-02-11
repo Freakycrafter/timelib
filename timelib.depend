@@ -1,6 +1,15 @@
 # depslib dependency file v1.0
-1581409059 source:c:\users\teilnehmer\desktop\testlib\main.c
+1581414957 source:c:\users\teilnehmer\desktop\testlib\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
+	"timelib.h"
+
+1581411969 c:\users\teilnehmer\desktop\testlib\timelib
+
+1581413726 c:\users\teilnehmer\desktop\testlib\timelib.h
+
+1581415284 source:c:\users\teilnehmer\desktop\testlib\timelib.c
+	<stdio.h>
+	"timelib.h"
 
