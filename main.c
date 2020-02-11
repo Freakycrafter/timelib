@@ -6,9 +6,6 @@
 *   Datum: 14.01.20
 *   Program zur Berechnung des aktuellen Tages im Jahr
 **/
-int day = -1;
-int month = -1;
-int year = -1;
 
 int is_leapyear(int year)
 {
@@ -92,21 +89,25 @@ int day_of_the_year(int day, int month, int year)
     return -1;
 }
 
-void input_date()
+void input_date(int *day, int *month, int *year)
 {
     printf("Bitte Tag eingeben: ");
-    scanf("%i", &day);
+    scanf("%i", day);
     fflush(stdin);
     printf("\nBitte Monat eingeben: ");
-    scanf("%i", &month);
+    scanf("%i", month);
     fflush(stdin);
     printf("\nBitte Jahr eingeben: ");
-    scanf("%i", &year);
+    scanf("%i", year);
 }
 
 main()
 {
-    input_date();
+    int day = -1;
+    int month = -1;
+    int year = -1;
+
+    input_date(&day, &month, &year);
     day_of_the_year(day, month, year);
     /**
     int tage[12] = {31,28,31,30,31,30,31,31,30,31,30,31};   //Anzahl Tage in den verschiedenen Monaten
