@@ -82,7 +82,7 @@ int day_of_the_year(int day, int month, int year)
             dayOfYear += get_days_for_month(month + 1, year);
         }
         dayOfYear += day;
-        return day;
+        return dayOfYear;
     }
     return -1;
 }
