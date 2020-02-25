@@ -15,7 +15,7 @@ main()
     int year = -1;
 
     input_date(&day, &month, &year);
-    printf("Das ist der %ite Tag im Jahr", day_of_the_year(day, month, year));
+    printf("Das ist der %ite Tag im Jahr\n", day_of_the_year(day, month, year));
     switch(get_week_day(day, month, year))
     {
         case 0: printf("Der Wochentag ist ein Montag"); break;
