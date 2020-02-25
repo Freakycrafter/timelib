@@ -40,12 +40,12 @@ int get_days_for_month(int month, int year)
 {
     if(month >= 1 && month <= 12)
     {
-    int days[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
-    if(is_leapyear(year))
-    {
-        days[1]++;
-    }
-    return days[month-1];
+        int days[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+        if(is_leapyear(year))
+        {
+            days[1]++;
+        }
+        return days[month-1];
     }
     else
     {
@@ -104,12 +104,16 @@ int get_week_of_year(int day, int month, int year)
 
 void input_date(int *day, int *month, int *year)
 {
-    printf("Bitte Tag eingeben: ");
-    scanf("%i", day);
-    fflush(stdin);
-    printf("\nBitte Monat eingeben: ");
-    scanf("%i", month);
-    fflush(stdin);
-    printf("\nBitte Jahr eingeben: ");
-    scanf("%i", year);
+    do
+    {
+        printf("Bitte Tag eingeben: ");
+        scanf("%i", day);
+        fflush(stdin);
+        printf("\nBitte Monat eingeben: ");
+        scanf("%i", month);
+        fflush(stdin);
+        printf("\nBitte Jahr eingeben: ");
+        scanf("%i", year);
+    }
+    while(!exists_date(*day, *month, *year));
 }
