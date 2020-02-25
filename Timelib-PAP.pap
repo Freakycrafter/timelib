@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="6674499EB3661AB7">
+  <PROJECT FORMAT="1.00" NAME="Timelib-PAP" AUTHOR="Teilnehmer" CREATED="2020.02.25 10:30:15" MODIFIED="2020.02.25 10:55:05">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Timelib" CREATED="2020.02.25 10:30:34" MODIFIED="2020.02.25 10:55:05">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="8">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Timelib]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Eingabefunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[Tag des Jahres Funktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Ausgabe "Der xte Tag im Jahr"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[Wochentagsfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[Ausgabe von Wochentag]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="16" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="16" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="1" NAME="Eingabefunktion" CREATED="2020.02.25 10:34:11" MODIFIED="2020.02.25 10:34:11">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Eingabefunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Eingabe von Tag, Monat, Jahr]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="2" NAME="Tag des Jahres Funktion" CREATED="2020.02.25 10:35:04" MODIFIED="2020.02.25 10:35:04">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="9">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Tag des Jahres Funktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Eingabe von Tag, Monat, Jahr]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Tagexistenzprüfungsfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Tag existiert?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="21">
+                <TEXT><![CDATA[Berechnung von Tag des Jahres]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Ausgabe von Tag des Jahres]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="13">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[Ausgabe von Fehlerwert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="21" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="19" FROM="18" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="14" FROM="8" TO="13" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="13" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="12" TO="16" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="20" FROM="16" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="22" FROM="21" TO="10" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="3" NAME="Wochentagsfunktion" CREATED="2020.02.25 10:35:22" MODIFIED="2020.02.25 10:35:22">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="7">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Wochentagsfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Eingabe von Tag, Monat, Jahr]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Schaltjahrfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Berechnung von Wochentag je nach Ausgabe von Schaltjahresfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Ausgabe von Wochentag als Zahl]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="4" NAME="Tagexistenzprüfungsfunktion" CREATED="2020.02.25 10:38:03" MODIFIED="2020.02.25 10:38:03">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="9">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Tagexistenzprüfungsfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Eingabe von Tag, Monat, Jahr]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Schaltjahrfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Tage im Monat Funktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Existiert das Datum?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[Ausgabe von Ja-Wert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="15">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[Ausgabe von Nein-Wert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="12" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="21" FROM="20" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="16" FROM="10" TO="15" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="15" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="19" FROM="14" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="20" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="22" FROM="18" TO="20" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="5" NAME="Schaltjahrfunktion" CREATED="2020.02.25 10:40:51" MODIFIED="2020.02.25 10:40:51">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="7">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="17">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="19">
+                <TEXT><![CDATA[Ausgabe von Nein-Wert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Schaltjahrfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Jahr zwischen 1581 und 2400?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="15">
+                <TEXT><![CDATA[Jahr durch 4 teilbar und nicht durch 100 teilbar oder durch 100 und 400 teilbar?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="25">
+                <TEXT><![CDATA[Ausgabe von Ja-Wert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="4">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Ausgabe von Fehlerwert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="4" TO="6" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="15" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="14" FROM="10" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="16" FROM="15" TO="25" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="18" FROM="15" TO="17" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="20" FROM="17" TO="19" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="19" TO="22" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="22" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="26" FROM="25" TO="12" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="6" NAME="Tage im Monat Funktion" CREATED="2020.02.25 10:41:20" MODIFIED="2020.02.25 10:41:20">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="9">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Tage im Monat Funktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Eingabe von Monat, Jahr]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[Eingabe Korrekt?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Schaltjahrfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Berechnung Tage im Monat (auslesen je nachdem was Schaltjahrfunktion ausgegeben hat)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Ausgabe von Tage im Monat]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="25">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="21">
+                <TEXT><![CDATA[Ausgabe von Fehlwert]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="23">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="26" FROM="25" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="6" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="12" TO="14" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="21" TO="23" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="14" TO="21" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="25" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="27" FROM="23" TO="25" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
