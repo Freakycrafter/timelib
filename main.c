@@ -10,23 +10,20 @@
 
 int main()
 {
-    int day = -1;
-    int month = -1;
-    int year = -1;
-
     struct date datum = input_date();
     printf("Das ist der %ite Tag im Jahr\n", day_of_the_year(datum));
     switch(get_week_day(datum))
     {
-        case 0: printf("Der Wochentag ist ein Montag"); break;
-        case 1: printf("Der Wochentag ist ein Dienstag"); break;
-        case 2: printf("Der Wochentag ist ein Mittwoch"); break;
-        case 3: printf("Der Wochentag ist ein Donnerstag"); break;
-        case 4: printf("Der Wochentag ist ein Freitag"); break;
-        case 5: printf("Der Wochentag ist ein Samstag"); break;
-        case 6: printf("Der Wochentag ist ein Sonntag"); break;
-        default: printf("Der Wochentag ist ein nicht vorhandener Tag"); break;
+        case 0: printf("Der Wochentag ist ein Montag.\n"); break;
+        case 1: printf("Der Wochentag ist ein Dienstag.\n"); break;
+        case 2: printf("Der Wochentag ist ein Mittwoch.\n"); break;
+        case 3: printf("Der Wochentag ist ein Donnerstag.\n"); break;
+        case 4: printf("Der Wochentag ist ein Freitag.\n"); break;
+        case 5: printf("Der Wochentag ist ein Samstag.\n"); break;
+        case 6: printf("Der Wochentag ist ein Sonntag.\n"); break;
+        default: printf("Der Wochentag ist ein nicht vorhandener Tag.\n"); break;
     }
+    printf("Es ist die %ite Woche im Jahr.\n", get_week_of_year(datum));
     /**
     int tage[12] = {31,28,31,30,31,30,31,31,30,31,30,31};   //Anzahl Tage in den verschiedenen Monaten
     int tag;

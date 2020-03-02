@@ -98,8 +98,34 @@ int get_week_day(struct date datum)
 
 int get_week_of_year(struct date datum)
 {
-    int weekOfYear = 1;
-    return 1;
+    int wochen = 0;
+    struct date firstDate;
+    firstDate.day = 1;
+    firstDate.month = 1;
+    firstDate.year = datum.year;
+    int firstDay = get_week_day(firstDate);
+    if(firstDay < 4)
+    {
+        wochen++;
+    }
+    int i = day_of_the_year(datum) + firstDay;
+    for(; i > 7; i -= 7)
+    {
+        wochen++;
+    }
+    if(wochen == 0)
+    {
+        struct date lastDate;
+        lastDate.day = 31;
+        lastDate.month = 12;
+        lastDate.year = datum.year - 1;
+        int i = day_of_the_year(lastDate);
+        for(; i > 0; i -= 7)
+        {
+            wochen++;
+        }
+    }
+    return wochen;
 }
 
 struct date input_date()
