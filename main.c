@@ -8,15 +8,15 @@
 *   Program zur Berechnung des aktuellen Tages im Jahr
 **/
 
-main()
+int main()
 {
     int day = -1;
     int month = -1;
     int year = -1;
 
-    input_date(&day, &month, &year);
-    printf("Das ist der %ite Tag im Jahr\n", day_of_the_year(day, month, year));
-    switch(get_week_day(day, month, year))
+    struct date datum = input_date();
+    printf("Das ist der %ite Tag im Jahr\n", day_of_the_year(datum));
+    switch(get_week_day(datum))
     {
         case 0: printf("Der Wochentag ist ein Montag"); break;
         case 1: printf("Der Wochentag ist ein Dienstag"); break;
@@ -59,4 +59,5 @@ main()
     aktuellerTag += tag;                                    //Addieren des aktuellen Tages im Monat
     printf("Der aktuelle Tag im Jahr ist der %i te Tag im Jahr. Dies ist die geupdatete Version.", aktuellerTag);
     return 0;**/
+    return 0;
 }
